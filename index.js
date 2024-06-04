@@ -3,7 +3,8 @@ const app = express();
 
 app.get("/home", (req, res) => {
   try {
-    return res.json({ page: "home" });
+    const page = "Home page";
+    return res.json({ page });
   } catch (error) {
     console.log(error);
   }
